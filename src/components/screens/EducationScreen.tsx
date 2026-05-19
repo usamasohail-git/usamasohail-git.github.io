@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { Video, BookOpen, MessageCircle, BarChart, Settings, Play, Send } from "lucide-react";
 
@@ -111,7 +112,7 @@ export function EducationScreen() {
 function SidebarBtn({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
   return (
     <div className={`w-full flex justify-center md:justify-start items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors ${active ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900 font-medium'}`}>
-      {React.cloneElement(icon as React.ReactElement, { className: "w-5 h-5" })}
+      {React.cloneElement(icon as React.ReactElement<any>, { className: "w-5 h-5" })}
       <span className="hidden md:inline text-sm">{label}</span>
     </div>
   );

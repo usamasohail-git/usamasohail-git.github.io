@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { Users, TrendingUp, Search, MessageSquare, Activity, CheckCircle2 } from "lucide-react";
 
@@ -98,7 +99,7 @@ export function AIMatchingScreen() {
 function SidebarItem({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
   return (
     <div className={`flex items-center gap-3 px-3 py-2 rounded-md cursor-pointer transition-colors ${active ? 'bg-blue-600/20 text-blue-400' : 'text-gray-400 hover:bg-white/5 hover:text-gray-300'}`}>
-      {React.cloneElement(icon as React.ReactElement, { className: "w-4 h-4" })}
+      {React.cloneElement(icon as React.ReactElement<any>, { className: "w-4 h-4" })}
       <span className="font-medium text-sm">{label}</span>
     </div>
   );
