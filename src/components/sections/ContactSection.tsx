@@ -4,10 +4,22 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Phone } from "lucide-react";
 import { Github, Linkedin } from "@/components/ui/icons";
 
 export function ContactSection() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const subject = formData.get("subject") as string;
+    const message = formData.get("message") as string;
+
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+    window.location.href = `mailto:usamasohail905@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  };
+
   return (
     <section className="py-24 relative" id="contact">
       <div className="container mx-auto px-6">
@@ -29,10 +41,10 @@ export function ContactSection() {
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
-                <ContactItem icon={<Mail />} title="Email" value="hello@usamasohail.com" />
-                <ContactItem icon={<MapPin />} title="Location" value="Lahore, Pakistan (Open to Remote)" />
-                <ContactItem icon={<Linkedin />} title="LinkedIn" value="linkedin.com/in/usamasohail" />
-                <ContactItem icon={<Github />} title="Github" value="github.com/usamasohail" />
+                <ContactItem icon={<Mail />} title="Email" value="usamasohail905@gmail.com" />
+                <ContactItem icon={<Phone />} title="Phone" value="+923035189377" />
+                <ContactItem icon={<Linkedin />} title="LinkedIn" value="linkedin.com/in/m-usamasohail" />
+                <ContactItem icon={<Github />} title="Github" value="linkedin.com/in/m-usamasohail" />
               </div>
             </div>
           </motion.div>
@@ -45,7 +57,7 @@ export function ContactSection() {
             transition={{ duration: 0.5 }}
             className="flex-[1.5]"
           >
-            <form className="glass-card p-8 flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="glass-card p-8 flex flex-col gap-6" onSubmit={handleSubmit}>
               <h3 className="text-2xl font-bold text-white mb-2">Send a Message</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -54,6 +66,8 @@ export function ContactSection() {
                   <input 
                     type="text" 
                     id="name" 
+                    name="name"
+                    required
                     className="bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
                     placeholder="John Doe"
                   />
@@ -63,6 +77,8 @@ export function ContactSection() {
                   <input 
                     type="email" 
                     id="email" 
+                    name="email"
+                    required
                     className="bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
                     placeholder="john@example.com"
                   />
@@ -74,6 +90,8 @@ export function ContactSection() {
                 <input 
                   type="text" 
                   id="subject" 
+                  name="subject"
+                  required
                   className="bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
                   placeholder="Project Inquiry"
                 />
@@ -83,13 +101,15 @@ export function ContactSection() {
                 <label htmlFor="message" className="text-sm font-medium text-gray-400">Message</label>
                 <textarea 
                   id="message" 
+                  name="message"
+                  required
                   rows={5}
                   className="bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none"
                   placeholder="How can I help you?"
                 />
               </div>
 
-              <Button variant="primary" className="w-full sm:w-auto self-start mt-2">
+              <Button type="submit" variant="primary" className="w-full sm:w-auto self-start mt-2">
                 Send Message <Send className="ml-2 w-4 h-4" />
               </Button>
             </form>

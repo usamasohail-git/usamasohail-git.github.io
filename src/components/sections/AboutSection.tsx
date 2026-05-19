@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Code2, Database, BrainCircuit, Rocket } from "lucide-react";
 
 const stats = [
-  { label: "Years Experience", value: "6+" },
+  { label: "Years Experience", value: "7+" },
   { label: "Projects Completed", value: "40+" },
   { label: "Technologies Used", value: "25+" },
   { label: "Industries Served", value: "5+" },
@@ -36,13 +36,13 @@ export function AboutSection() {
             className="space-y-6 text-gray-300 text-lg leading-relaxed"
           >
             <p>
-              I am a Full Stack and AI Engineer with over 6 years of experience building scalable web platforms, AI systems, APIs, and real-time applications. My journey spans across diverse industries including AI, healthcare, gaming, IoT, EdTech, and marketplaces.
+              I am a seasoned Software Engineer with over 7 years of experience specializing in Python and React. My expertise lies in designing scalable backend architectures, implementing robust design patterns, and integrating Large Language Models (LLMs) to solve complex real-world problems.
             </p>
             <p>
-              I specialize in backend architecture, cloud deployment, and the seamless integration of Large Language Models (LLMs) into production environments. Whether it's setting up semantic matching algorithms or building dynamic Next.js interfaces, I am motivated by complex problem-solving.
+              In my recent roles, I have focused heavily on the Python ecosystem, building advanced AI pipelines, semantic search engines, and scalable microservices. I have extensive experience implementing database optimization techniques for low-latency queries, alongside leveraging Python's multiprocessing and threading to efficiently manage compute-intensive workloads and concurrent I/O operations. I am deeply passionate about writing clean, maintainable code using proven design patterns and leveraging the latest AI technologies to deliver high-performance solutions.
             </p>
             <p>
-              My goal is to continue pushing the boundaries of what's possible with modern web technologies and artificial intelligence, crafting products that are not just functional, but genuinely impactful and beautifully designed.
+              Whether it's architecting a scalable backend in Python or crafting dynamic, intuitive frontends with React, my goal is to build beautifully designed, highly functional products that make a genuine impact.
             </p>
           </motion.div>
 

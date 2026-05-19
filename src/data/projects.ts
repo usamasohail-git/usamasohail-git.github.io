@@ -34,12 +34,12 @@ export const projectData = {
   },
   "asani-iot-platform": {
     title: "Asani IoT Platform",
-    overview: "A real-time device monitoring and mobile payment system orchestrating data from hundreds of deployed vending machines.",
+    overview: "A React Native mobile app and real-time device monitoring system orchestrating data from hundreds of deployed vending machines for Wonder Women.",
     problem: "Field machines were frequently offline without operators knowing, and the legacy payment terminals were prone to mechanical failures.",
     architecture: "React Native mobile app, MQTT broker for device telemetry, AWS IoT Core, Serverless Lambda functions.",
     technologies: ["React Native", "MQTT", "AWS IoT Core", "Serverless", "Node.js"],
     challenges: "Handling intermittent network connectivity from machines in remote locations and ensuring secure, instantaneous mobile payments.",
-    role: "Full Stack Developer - Built the mobile payment app and the real-time telemetry dashboard.",
+    role: "Full Stack Developer - Built the React Native mobile payment app and the real-time telemetry dashboard.",
     solution: "Designed an offline-first mobile architecture using local caching and an MQTT-based lightweight messaging protocol for telemetry.",
     results: "Reduced machine downtime by 75% through predictive maintenance alerts, and increased digital payment adoption by 200%."
   }

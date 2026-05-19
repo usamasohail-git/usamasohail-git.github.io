@@ -3,7 +3,7 @@ import React from "react";
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, ArrowRight, Download } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import { Github, Linkedin } from "@/components/ui/icons";
 import { Button } from "@/components/ui/Button";
 
@@ -63,25 +63,22 @@ export function HeroSection() {
               </div>
 
               <p className="text-gray-400 max-w-xl mx-auto lg:mx-0 mb-8 text-lg">
-                Building scalable web platforms, AI systems, and real-time applications. Turning complex problems into elegant solutions.
+                Building scalable AI systems and web platforms using Python, FastAPI, PostgreSQL (pgvector), Redis, Celery, and LLMs. Turning complex problems into elegant solutions.
               </p>
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
-                <Button variant="primary">
+                <Button variant="primary" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
                   View Projects <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
-                <Button variant="glass">
-                  <Download className="mr-2 w-4 h-4" /> Resume
-                </Button>
-                <Button variant="outline">Contact Me</Button>
+                <Button variant="outline" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>Contact Me</Button>
               </div>
 
               {/* Social Links */}
               <div className="flex items-center justify-center lg:justify-start gap-6">
-                <SocialLink href="#" icon={<Github />} />
-                <SocialLink href="#" icon={<Linkedin />} />
-                <SocialLink href="#" icon={<Mail />} />
+                <SocialLink href="https://www.linkedin.com/in/m-usamasohail/" icon={<Github />} />
+                <SocialLink href="https://www.linkedin.com/in/m-usamasohail/" icon={<Linkedin />} />
+                <SocialLink href="mailto:usamasohail905@gmail.com" icon={<Mail />} />
               </div>
             </motion.div>
           </div>

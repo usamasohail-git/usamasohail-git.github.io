@@ -29,9 +29,9 @@ const projects = [
     tags: ["React", "WebSockets", "Node.js", "Crypto"]
   },
   {
-    title: "Asani IoT Platform",
+    title: "Wonder Women - Asani IoT Platform",
     slug: "asani-iot-platform",
-    description: "Real-time device monitoring and payment system processing data from hundreds of vending machines via MQTT.",
+    description: "React Native mobile app and real-time device monitoring system for Wonder Women's vending machines via MQTT.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
     tags: ["React Native", "IoT", "MQTT", "AWS"]
   }
