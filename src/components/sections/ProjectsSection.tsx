@@ -15,11 +15,11 @@ const projects = [
     tags: ["Python", "pgvector", "Redis", "OpenAI"]
   },
   {
-    title: "Education Platform",
-    slug: "education-platform",
-    description: "A comprehensive EdTech solution featuring real-time AI tutor integrations and complex admin/student workflows.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
-    tags: ["Next.js", "Nest.js", "PostgreSQL"]
+    title: "Aerial Object Detection & AI Search",
+    slug: "dnd-soul-ai-system",
+    description: "A high-performance AI computer vision pipeline and microservice that automates aerial image dataset conversions and enables tactical battlefield semantic search via AWS Bedrock LLMs.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+    tags: ["Python", "YOLO", "AWS Bedrock", "FastAPI"]
   },
   {
     title: "Gaming Platform",

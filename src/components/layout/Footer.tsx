@@ -20,7 +20,7 @@ export function Footer() {
               Full Stack and AI Engineer building scalable web platforms, AI systems, and real-time applications.
             </p>
             <div className="flex items-center gap-4 text-gray-400">
-              <a href="https://www.linkedin.com/in/m-usamasohail/" className="hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
+              <a href="https://github.com/usamasohail-git" className="hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
               <a href="https://www.linkedin.com/in/m-usamasohail/" className="hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
               <a href="mailto:usamasohail905@gmail.com" className="hover:text-white transition-colors"><Mail className="w-5 h-5" /></a>
             </div>

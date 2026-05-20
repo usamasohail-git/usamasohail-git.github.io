@@ -44,7 +44,7 @@ export function ContactSection() {
                 <ContactItem icon={<Mail />} title="Email" value="usamasohail905@gmail.com" />
                 <ContactItem icon={<Phone />} title="Phone" value="+923035189377" />
                 <ContactItem icon={<Linkedin />} title="LinkedIn" value="linkedin.com/in/m-usamasohail" />
-                <ContactItem icon={<Github />} title="Github" value="linkedin.com/in/m-usamasohail" />
+                <ContactItem icon={<Github />} title="Github" value="github.com/usamasohail-git" />
               </div>
             </div>
           </motion.div>

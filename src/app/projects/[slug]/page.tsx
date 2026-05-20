@@ -2,7 +2,7 @@ import { projectData } from "@/data/projects";
 import { notFound } from "next/navigation";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AIMatchingScreen } from "@/components/screens/AIMatchingScreen";
-import { EducationScreen } from "@/components/screens/EducationScreen";
+import { DnDSoulScreen } from "@/components/screens/DnDSoulScreen";
 import { GamingScreen } from "@/components/screens/GamingScreen";
 import { AsaniScreen } from "@/components/screens/AsaniScreen";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
@@ -35,7 +35,7 @@ export default function ProjectCaseStudy({ params }: { params: { slug: string } 
   // Determine which screen to render based on slug
   let ScreenComponent = null;
   if (params.slug === "ai-matching-platform") ScreenComponent = AIMatchingScreen;
-  if (params.slug === "education-platform") ScreenComponent = EducationScreen;
+  if (params.slug === "dnd-soul-ai-system") ScreenComponent = DnDSoulScreen;
   if (params.slug === "gaming-platform") ScreenComponent = GamingScreen;
   if (params.slug === "asani-iot-platform") ScreenComponent = AsaniScreen;
 

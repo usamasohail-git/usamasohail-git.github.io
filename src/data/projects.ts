@@ -10,16 +10,16 @@ export const projectData = {
     solution: "Implemented an async embedding pipeline that batches text, generates OpenAI embeddings, and stores them in pgvector. Built an approximate nearest neighbor (ANN) search for lightning-fast matching.",
     results: "Increased match accuracy by 340%, reduced search latency to 45ms, and successfully scaled to support over 2 million entities."
   },
-  "education-platform": {
-    title: "Education Platform",
-    overview: "A comprehensive EdTech solution providing real-time AI tutor interactions and robust administrative workflows for course management.",
-    problem: "Students lacked personalized guidance outside of working hours, and administrators struggled to track student engagement across various courses.",
-    architecture: "Nest.js microservices, Next.js frontend, PostgreSQL, OpenAI GPT-4 integration, WebRTC for video lessons.",
-    technologies: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL", "OpenAI", "WebRTC"],
-    challenges: "Maintaining contextual memory for AI tutors over long-term student interactions and ensuring real-time UI updates during active chat sessions.",
-    role: "Full Stack Engineer - Built the interactive student dashboard, AI chat interface, and course management systems.",
-    solution: "Developed a streaming AI chat interface using React and Server-Sent Events (SSE). Implemented a vector-based memory system for the AI tutor to recall past lessons.",
-    results: "Boosted student retention by 45%, facilitated over 100k+ automated tutoring hours, and reduced admin overhead by 60%."
+  "dnd-soul-ai-system": {
+    title: "Aerial Object Detection & AI Search",
+    overview: "A high-performance AI microservice and computer vision pipeline designed to automate aerial imagery standardization (YOLO format) and enable tactical intelligence querying via AWS Bedrock LLMs.",
+    problem: "Ingesting, normalizing, and unifying diverse military-grade aerial datasets (e.g., VisDrone, xView) was highly manual, and querying tactical intelligence required slow database queries rather than natural-language situational awareness.",
+    architecture: "AWS Bedrock, YOLO Model Infrastructure, FastAPI, Python Multiprocessing, AWS S3, Docker.",
+    technologies: ["Python", "AWS Bedrock", "YOLO", "FastAPI", "Docker", "AWS S3"],
+    challenges: "Handling highly disparate coordinate schemas and image formats from multiple aerial sources, and generating low-latency real-time natural language summaries for active ISR feeds.",
+    role: "Lead AI Engineer - Engineered the automated computer vision pipeline and integrated the LLM-powered semantic search-and-analysis subsystem.",
+    solution: "Developed a Python pipeline that standardized conversion of multiple annotation formats into YOLO. Integrated AWS Bedrock LLMs to perform semantic scene labeling and produce natural language intelligence summaries.",
+    results: "Reduced manual threat identification analysis time by 80%, slashed dataset preparation time by 65%, and enabled seamless multi-source model training."
   },
   "gaming-platform": {
     title: "Gaming Platform",

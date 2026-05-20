@@ -76,7 +76,7 @@ export function HeroSection() {
 
               {/* Social Links */}
               <div className="flex items-center justify-center lg:justify-start gap-6">
-                <SocialLink href="https://www.linkedin.com/in/m-usamasohail/" icon={<Github />} />
+                <SocialLink href="https://github.com/usamasohail-git" icon={<Github />} />
                 <SocialLink href="https://www.linkedin.com/in/m-usamasohail/" icon={<Linkedin />} />
                 <SocialLink href="mailto:usamasohail905@gmail.com" icon={<Mail />} />
               </div>
