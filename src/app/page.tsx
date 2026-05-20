@@ -3,7 +3,7 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
-import { GithubSection } from "@/components/sections/GithubSection";
+import { ArchitectureSection } from "@/components/sections/ArchitectureSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
@@ -15,7 +15,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />
-      <GithubSection />
+      <ArchitectureSection />
       <TestimonialsSection />
       <ContactSection />
     </main>
